@@ -1,0 +1,36 @@
+.features {
+  grid-column: center-start / center-end;
+  display: grid;
+  grid-template-columns:  repeat(  auto-fit , minmax(25rem, 1fr))  ;
+  justify-content: center;
+  grid-gap: 5rem;
+  margin: 15rem 0;
+  align-items: start;
+
+
+  .feature {
+    display:grid;
+    grid-template-columns: [iconesrart ] 5rem [iconend ] 1fr ;
+    align-items: center;
+    grid-row-gap: .5rem;
+    
+
+
+    .icon {
+      grid-column: iconesrart / iconend  ;
+      width: 4.5rem;
+      height: 4.5rem;
+      margin-right: 1rem;
+      fill: var(--color-primary) ;
+    }
+
+    .title {
+      grid-column: iconend / -1;
+      
+    }
+    .paragraph{
+      grid-column: iconend / -1 ;
+      font-size: 1.5rem;
+    }
+  }
+}

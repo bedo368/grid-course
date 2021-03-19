@@ -1,0 +1,33 @@
+.sidebar {
+  background-color: var(--color-primary);
+  grid-column: sidebar-start / sidebar-end;
+  grid-row: 1 / -1;
+  position: relative;
+  .navbtn {
+    position: fixed;
+    border: none;
+    border-radius: 0;
+    background-color: white;
+    height: 2px;
+    width: 4.5rem;
+    top:4rem;
+    left:2rem;
+    &:focus{
+      outline:invert;
+    }
+    &::after,
+    &::before {
+      content: "";
+      background-color: white;
+      height: 2px;
+      width: 4.5rem; 
+      display: block;
+    }
+    &::before {
+      transform: translateY(14px);
+    }
+    &::after {
+      transform: translateY(-14px);
+    }
+  }
+}

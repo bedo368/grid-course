@@ -1,0 +1,37 @@
+.footer{
+  background-color: var(--color-secondry) ; 
+  grid-column : full-start / full-end ;
+  padding : 10rem 0 ;
+  width: 100%;
+  .nav{
+    list-style: none;
+    display: flex;
+    width: 100%;
+    // grid-template-columns: repeat(auto-fit , minmax(22rem , 1fr));
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    flex-flow: row wrap;
+    
+    
+    &__item{
+      font-size:1.4rem; 
+      color:white;
+      text-transform: uppercase;
+      font-family: var(--font-secondry);
+      text-align: center;
+      padding: 1.5rem;
+      cursor: pointer;
+      user-select: none;
+      transition: all .3s;
+      min-width: 22rem;
+      max-width: 28rem;
+      
+      &:hover{
+        background-color:rgba(255, 255, 255, 0.07);
+        transform:translateY(-.5rem)
+
+      }
+    }
+  }
+}

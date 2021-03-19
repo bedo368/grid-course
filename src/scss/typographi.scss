@@ -1,0 +1,50 @@
+.heading--4 {
+  font-family: var(--font-secondry);
+  font-weight: 400;
+  font-size: 1.9rem;
+}
+
+.heading--2 {
+  font-size: 4rem;
+  text-transform: capitalize;
+  font-style: italic;
+}
+.heading--3 {
+  font-size: 1.6rem;
+  color: var(--color-primary);
+  text-transform: capitalize;
+}
+
+.btn {
+  background-color: var(--color-primary);
+  color: #fff;
+  border: none;
+  font-family: var(--font-secondry);
+  font-size: 1.6rem;
+  text-transform: capitalize;
+  padding: 1.5rem 3rem;
+  transition: all 0.1s;
+  cursor: pointer;
+  &:hover {  
+    background-color: var(--color-primary-dark);
+  }
+  
+  &:focus{
+    outline:none;
+    border:none;
+  }
+}
+
+.mg-sb {
+  margin-bottom: 2rem;
+}
+.mg-md {
+  margin-bottom: 3rem;
+}
+.mg-lg {
+  margin-bottom: 4rem;
+}
+.mg-hg {
+  margin-bottom: 8rem;
+}
+

@@ -1,0 +1,54 @@
+.home-card {
+  max-width: 35rem;
+  background-color: var(--color-grey-light-1);
+  display: grid;
+  position: relative;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  .img {
+    width: 100%;
+    grid-column: 1 / -1;
+  }
+  .name {
+    background-color: var(--color-secondry);
+    color: white;
+    font-size: 1.7rem;
+    width: 90%;
+    padding: 0.5rem 2rem;
+    grid-column: 1 / -1;
+    transform: translateY(-50%);
+    text-align: center;
+  }
+  .icon {
+    fill: rgba(0, 0, 0, 0.541);
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+  }
+
+  .location,
+  .romes,
+  .area,
+  .price {
+    justify-self: start;
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    font-size: 1.3rem;
+    margin-left: 25%;
+
+    &__icon {
+      width: 2rem;
+      height: 2rem;
+      fill: var(--color-primary);
+      margin-right: 1rem;
+    }
+  }
+
+  .btn {
+    grid-column: 1 /-1;
+    justify-self: stretch;
+  }
+}
