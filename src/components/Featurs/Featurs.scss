@@ -6,6 +6,11 @@
   grid-gap: 5rem;
   margin: 15rem 0;
   align-items: start;
+  @media screen and(max-width:980px) {
+  grid-column: 1 /-1;
+    
+    
+  }
 
 
   .feature {

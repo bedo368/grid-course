@@ -3,6 +3,12 @@
   grid-column : full-start / full-end ;
   padding : 10rem 0 ;
   width: 100%;
+
+  @media screen and(max-width:980px) {
+    grid-column: 1 /-1;
+      
+      
+    }
   .nav{
     list-style: none;
     display: flex;

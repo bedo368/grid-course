@@ -3,8 +3,18 @@
   grid-column: sidebar-start / sidebar-end;
   grid-row: 1 / -1;
   position: relative;
+  display: grid;
+  justify-content: center;
+  padding: 2rem 0;
+  @media screen and(max-width:980px) {
+    grid-column: 1 /-1;
+    justify-content: end;
+    padding-right: 2rem;
+    align-items: center;
+      
+      
+    }
   .navbtn {
-    position: fixed;
     border: none;
     border-radius: 0;
     background-color: white;
@@ -12,6 +22,7 @@
     width: 4.5rem;
     top:4rem;
     left:2rem;
+    cursor: pointer;
     &:focus{
       outline:invert;
     }

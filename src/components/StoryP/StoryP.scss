@@ -8,6 +8,11 @@
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(6, 1fr);
   align-items: center; 
+  @media screen and(max-width:980px) {
+    grid-column: 1 /-1;
+      
+      
+    }
   .img--1 {
     width: 100%;
     grid-column: 2 / 6;
@@ -20,5 +25,12 @@
     grid-row: 4/6;
     z-index: 43;
     box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.233);
+    @media screen and(max-width:980px) {
+      width: 100%;
+    grid-row: 3/5;
+      
+        
+        
+      }
   }
 }

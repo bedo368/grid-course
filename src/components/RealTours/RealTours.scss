@@ -1,4 +1,51 @@
-.realtours{
-  background-color: purple;
-  grid-column: col-start 7 / full-end ;
+.realtours {
+  background-color: var(--color-secondry);
+  grid-column: col-start 7 / full-end;
+  align-content: center;
+  display: grid;
+  grid-template-rows: max-content max-content;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  grid-gap: 2rem;
+  @media screen and(max-width:980px) {
+    padding: 2rem 0;
+    grid-column: 1 /-1;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+  }
+  p {
+    font-size: 1.9rem;
+    color: var(--color-primary);
+    text-transform: uppercase;
+  }
+  .relators {
+    display: grid;
+    grid-gap: 2rem;
+    @media screen and(max-width:980px) {
+      grid-template-columns: repeat(3, minmax(10rem, 1fr));
+    }
+    .relator {
+      display: grid;
+      grid-gap: 1rem;
+      grid-template-rows: max-content max-content;
+      grid-template-columns: 1fr 1fr;
+      .relator-img {
+        height: 9rem;
+        border-radius: 50%;
+      }
+      .info {
+        align-self: center;
+        justify-self: center;
+        .name {
+          font-size: 1.4rem;
+          color: white;
+        }
+        .num-of-house {
+          font-size: 0.8rem;
+          color: var(--color-grey-light-2);
+        }
+      }
+    }
+  }
 }
